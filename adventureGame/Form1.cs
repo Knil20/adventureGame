@@ -21,6 +21,7 @@ namespace adventureGame
             titleLabel.Text = "You are stuck in a pizzeria with killer animatronics. Do you Hide or do you Look Around";
             option1Label.Text = "Look around";
             option2Label.Text = "Hide";
+
         }
 
         private void option1Button_Click(object sender, EventArgs e)
@@ -49,7 +50,19 @@ namespace adventureGame
             }
             else if (page == 6)
             {
-                page = 8;
+                // page = 8;
+                int rand;
+
+                Random ranGen = new Random();
+                rand = ranGen.Next(1, 101);
+                if (rand > 20)
+                {
+                    page = 8;
+                }
+                else
+                {
+                    page = 10;
+                }
             }
             else if (page == 7)
             {
@@ -158,16 +171,22 @@ namespace adventureGame
                     titleLabel.Text = "You are stuck in a pizzeria with killer animatronics. Do you Hide or do you Look Around";
                     option1Label.Text = "Look around";
                     option2Label.Text = "Hide";
+                    leaveButton.Text = "Leave?";
+                    leaveButton.Visible = true;
                     break;
                 case 2:
                     titleLabel.Text = "You find a security office";
                     option1Label.Text = "Stay";
                     option2Label.Text = "Keep Looking";
+                    leaveButton.Text = "";
+                    leaveButton.Visible = false;
                     break;
                 case 3:
                     titleLabel.Text = "You hide under a table";
                     option1Label.Text = "Stay";
                     option2Label.Text = "Venture Out";
+                    leaveButton.Text = "";
+                    leaveButton.Visible = false;
                     break;
                 case 4:
                     titleLabel.Text = "The office is full of things that could potentially help you, such as a flashlight, and an odd animal mask. But no time to talk. You hear An animatronic coming towards you";
@@ -187,27 +206,27 @@ namespace adventureGame
                 case 7:
                     titleLabel.Text = "Why would you do that,You were found and now you're dead";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 8:
                     titleLabel.Text = "You got caught by an animatronic";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 9:
                     titleLabel.Text = "An animatronic saw, chased, and killed you.";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 10:
                     titleLabel.Text = "You run out of the office and bump into a door that was accidentally left unlocked, you escape";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 11:
                     titleLabel.Text = "You stay put and survive the night until the place opens again, congrats, for being lazy. play again";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 12:
                     titleLabel.Text = "You come across an old room full of old animatronic costumes ";
@@ -218,14 +237,16 @@ namespace adventureGame
                     titleLabel.Text = "You refuse to put on the suit, you decide to head back to the office";
                     option1Label.Text = "Go Back";
                     option2Label.Text = "Go Back";
-                    
+
 
                     break;
                 case 14:
                     titleLabel.Text = "The animatronic wanders into your room but sees no sign of life, and wanders back out";
+                    option1Label.Text = "";
+                    option2Label.Text = "";
                     Refresh();
                     Thread.Sleep(4000);
-                    titleLabel.Text = "with opening time right around the corner, you have no choice but to stay in the office";
+                    titleLabel.Text = "With opening time right around the corner, you have no choice but to stay in the office";
                     Refresh();
                     Thread.Sleep(4000);
                     titleLabel.Text = "You discover a camera system that you can use to monitor the animatronics,";
@@ -238,7 +259,7 @@ namespace adventureGame
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Dam, I Hate This Game";
                 case 16:
-                    titleLabel.Text = "Two of the animatronics are just walking around the room but one f them looks like its heading towards the office";
+                    titleLabel.Text = "Two of the animatronics are just walking around the room but one of them looks like its heading towards the office";
                     option1Label.Text = "Keep Searching Cameras";
                     option2Label.Text = "Prepare For Animatronic";
                     break;
@@ -250,7 +271,7 @@ namespace adventureGame
                 case 18:
                     titleLabel.Text = "While you are dazzled by the flashy cameras, an animatronic snuck into the office and forced you off the camera and into their mouth, Yikes!";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 19:
                     titleLabel.Text = "You don't hear the animatronic coming yet but decide to prepare anyway";
@@ -265,14 +286,13 @@ namespace adventureGame
                 case 21:
                     titleLabel.Text = "You put the suit on unaware the the suit has a mechanism that fills the suit with metal to create an animatronic, you trip set mechanism and the suit crushes you. you are dead, play again";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 22:
                     titleLabel.Text = "Nothings There";
-                    option1Label.Text = "Don't Not Not Not Not Press The Button";
-                    option2Label.Text = "Don't Not Not Not Not Press The Button";
-                    Refresh();
-                    Thread.Sleep(200);
+                    option1Label.Text = "Press To Go Back";
+                    option2Label.Text = "Press To Go Back";
+                    
 
 
                     break;
@@ -283,13 +303,17 @@ namespace adventureGame
                     break;
                 case 24:
                     titleLabel.Text = "You slip on the mask and the animatronic enters, scans, then leaves.";
-                    option1Label.Text = "Don't Not Not Not Not Press The Button";
-                    option2Label.Text = "Don't Not Not Not Not Press The Button";
+                    option1Label.Text = "";
+                    option2Label.Text = "";
+                    option1Label.Visible = false;
+                    option2Label.Visible = false;
                     Refresh();
-                    Thread.Sleep(500);
+                    Thread.Sleep(5000);
                     titleLabel.Text = "Its opening time, you win";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Dam, I Hate This Game";
+                    option1Label.Visible = true;
+                    option2Label.Visible = true;
                     break;
                 case 25:
                     titleLabel.Text = "You go back on the cameras";
@@ -299,17 +323,17 @@ namespace adventureGame
                 case 26:
                     titleLabel.Text = "Doesn't matter, an animatronic that you may or may not have known about has entered and killed you";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 27:
                     titleLabel.Text = "Animatronic enters and you try and flash it, but the flashlight has died, and now, you have died too";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 28:
                     titleLabel.Text = "Animatronic regains its scanner and finds and kills you";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
 
 
@@ -453,16 +477,22 @@ namespace adventureGame
                     titleLabel.Text = "You are stuck in a pizzeria with killer animatronics. Do you Hide or do you Look Around";
                     option1Label.Text = "Look around";
                     option2Label.Text = "Hide";
+                    leaveButton.Text = "Leave?";
+                    leaveButton.Visible = true;
                     break;
                 case 2:
                     titleLabel.Text = "You find a security office";
                     option1Label.Text = "Stay";
                     option2Label.Text = "Keep Looking";
+                    leaveButton.Text = "";
+                    leaveButton.Visible = false;
                     break;
                 case 3:
                     titleLabel.Text = "You hide under a table";
                     option1Label.Text = "Stay";
                     option2Label.Text = "Venture Out";
+                    leaveButton.Text = "";
+                    leaveButton.Visible = false;
                     break;
                 case 4:
                     titleLabel.Text = "The office is full of things that could potentially help you, such as a flashlight, and an odd animal mask. But no time to talk. You hear An animatronic coming towards you";
@@ -482,27 +512,27 @@ namespace adventureGame
                 case 7:
                     titleLabel.Text = "Why would you do that,You were found and now you're dead";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 8:
                     titleLabel.Text = "You got caught by an animatronic";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 9:
                     titleLabel.Text = "An animatronic saw, chased, and killed you.";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 10:
                     titleLabel.Text = "You run out of the office and bump into a door that was accidentally left unlocked, you escape";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 11:
                     titleLabel.Text = "You stay put and survive the night until the place opens again, congrats, for being lazy. play again";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 12:
                     titleLabel.Text = "You come across an old room full of old animatronic costumes ";
@@ -518,27 +548,24 @@ namespace adventureGame
                     break;
                 case 14:
                     titleLabel.Text = "The animatronic wanders into your room but sees no sign of life, and wanders back out";
-                    option1Label.Text = "Don't Not Not Not Not Press The Button";
-                    option2Label.Text = "Don't Not Not Not Not Press The Button";
+                    option1Label.Text = "";
+                    option2Label.Text = "";
                     Refresh();
                     Thread.Sleep(4000);
                     titleLabel.Text = "With opening time right around the corner, you have no choice but to stay in the office";
-                    option1Label.Text = "Don't Not Not Not Not Press The Button";
-                    option2Label.Text = "Don't Not Not Not Not Press The Button";
                     Refresh();
                     Thread.Sleep(4000);
-                    titleLabel.Text = "You discover a camera system that you can use to monitor the animatronics.";
+                    titleLabel.Text = "You discover a camera system that you can use to monitor the animatronics,";
                     option1Label.Text = "Main Hall";
                     option2Label.Text = "Kitchen";
                     break;
                 case 15:
-                    titleLabel.Text = "You find that one of the animatronics is in the kitchen eating trash, despite not having a proper digestive system ";
-                    option1Label.Text = "Get Off Camera";
-                    option2Label.Text = "Next Camera";
                     break;
-                    
+                    titleLabel.Text = "You find that one of the animatronics is in the kitchen eating trash, despite not having a proper digestive system ";
+                    option1Label.Text = "Play Again";
+                    option2Label.Text = "Dam, I Hate This Game";
                 case 16:
-                    titleLabel.Text = "Two of the animatronics are just walking around the room but one f them looks like its heading towards the office";
+                    titleLabel.Text = "Two of the animatronics are just walking around the room but one of them looks like its heading towards the office";
                     option1Label.Text = "Keep Searching Cameras";
                     option2Label.Text = "Prepare For Animatronic";
                     break;
@@ -546,13 +573,11 @@ namespace adventureGame
                     titleLabel.Text = "You get off the cameras, No ones Here";
                     option1Label.Text = "Go Back On Cameras";
                     option2Label.Text = "Prepare for something thats not here";
-                  
-
                     break;
                 case 18:
                     titleLabel.Text = "While you are dazzled by the flashy cameras, an animatronic snuck into the office and forced you off the camera and into their mouth, Yikes!";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 19:
                     titleLabel.Text = "You don't hear the animatronic coming yet but decide to prepare anyway";
@@ -567,13 +592,15 @@ namespace adventureGame
                 case 21:
                     titleLabel.Text = "You put the suit on unaware the the suit has a mechanism that fills the suit with metal to create an animatronic, you trip set mechanism and the suit crushes you. you are dead, play again";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 22:
                     titleLabel.Text = "Nothings There";
-                    option1Label.Text = "Go Back";
-                    option2Label.Text = "Go Back";
-                    
+                    option1Label.Text = "Press To Go Back";
+                    option2Label.Text = "Press To Go Back";
+
+
+
                     break;
                 case 23:
                     titleLabel.Text = "An animatronic is slowly making its way to the office";
@@ -582,13 +609,17 @@ namespace adventureGame
                     break;
                 case 24:
                     titleLabel.Text = "You slip on the mask and the animatronic enters, scans, then leaves.";
-                    option1Label.Text = "Don't Not Not Not Not Press The Button";
-                    option2Label.Text = "Don't Not Not Not Not Press The Button";
+                    option1Label.Text = "";
+                    option2Label.Text = "";
+                    option1Label.Visible = false;
+                    option2Label.Visible = false;
                     Refresh();
-                    Thread.Sleep(500);
+                    Thread.Sleep(5000);
                     titleLabel.Text = "Its opening time, you win";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Dam, I Hate This Game";
+                    option1Label.Visible = true;
+                    option2Label.Visible = true;
                     break;
                 case 25:
                     titleLabel.Text = "You go back on the cameras";
@@ -598,22 +629,27 @@ namespace adventureGame
                 case 26:
                     titleLabel.Text = "Doesn't matter, an animatronic that you may or may not have known about has entered and killed you";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 27:
                     titleLabel.Text = "Animatronic enters and you try and flash it, but the flashlight has died, and now, you have died too";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
                 case 28:
                     titleLabel.Text = "Animatronic regains its scanner and finds and kills you";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     break;
             }
 
 
 
+        }
+
+        private void leaveButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

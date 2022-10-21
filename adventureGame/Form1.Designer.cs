@@ -33,6 +33,7 @@
             this.option2Label = new System.Windows.Forms.Label();
             this.option1Label = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.leaveButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // option1Button
@@ -94,6 +95,16 @@
             this.titleLabel.Text = "You are stuck in a pizzeria with killer animatronics. Do you Hide or do you Look " +
     "Around";
             // 
+            // leaveButton
+            // 
+            this.leaveButton.Location = new System.Drawing.Point(389, 64);
+            this.leaveButton.Name = "leaveButton";
+            this.leaveButton.Size = new System.Drawing.Size(51, 31);
+            this.leaveButton.TabIndex = 5;
+            this.leaveButton.Text = "Leave?";
+            this.leaveButton.UseVisualStyleBackColor = true;
+            this.leaveButton.Click += new System.EventHandler(this.leaveButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -102,6 +113,7 @@
             this.BackgroundImage = global::adventureGame.Properties.Resources.Ebn0Kq1UMAAmU1m;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(452, 450);
+            this.Controls.Add(this.leaveButton);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.option2Label);
             this.Controls.Add(this.option1Label);
@@ -120,6 +132,7 @@
         private System.Windows.Forms.Label option2Label;
         private System.Windows.Forms.Label option1Label;
         private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.Button leaveButton;
     }
 }
 

@@ -30,8 +30,8 @@
         {
             this.option1Button = new System.Windows.Forms.Button();
             this.option2Button = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.output1Label = new System.Windows.Forms.Label();
+            this.option2Label = new System.Windows.Forms.Label();
+            this.option1Label = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -63,25 +63,25 @@
             this.option2Button.UseVisualStyleBackColor = true;
             this.option2Button.Click += new System.EventHandler(this.option2Button_Click);
             // 
-            // label1
+            // option2Label
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(117, 407);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 31);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Hide";
+            this.option2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.option2Label.ForeColor = System.Drawing.Color.White;
+            this.option2Label.Location = new System.Drawing.Point(117, 407);
+            this.option2Label.Name = "option2Label";
+            this.option2Label.Size = new System.Drawing.Size(323, 31);
+            this.option2Label.TabIndex = 3;
+            this.option2Label.Text = "Hide";
             // 
-            // output1Label
+            // option1Label
             // 
-            this.output1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.output1Label.ForeColor = System.Drawing.Color.White;
-            this.output1Label.Location = new System.Drawing.Point(117, 370);
-            this.output1Label.Name = "output1Label";
-            this.output1Label.Size = new System.Drawing.Size(323, 31);
-            this.output1Label.TabIndex = 2;
-            this.output1Label.Text = "Look around";
+            this.option1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.option1Label.ForeColor = System.Drawing.Color.White;
+            this.option1Label.Location = new System.Drawing.Point(117, 370);
+            this.option1Label.Name = "option1Label";
+            this.option1Label.Size = new System.Drawing.Size(323, 31);
+            this.option1Label.TabIndex = 2;
+            this.option1Label.Text = "Look around";
             // 
             // titleLabel
             // 
@@ -103,8 +103,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(452, 450);
             this.Controls.Add(this.titleLabel);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.output1Label);
+            this.Controls.Add(this.option2Label);
+            this.Controls.Add(this.option1Label);
             this.Controls.Add(this.option2Button);
             this.Controls.Add(this.option1Button);
             this.Name = "Form1";
@@ -117,8 +117,8 @@
 
         private System.Windows.Forms.Button option1Button;
         private System.Windows.Forms.Button option2Button;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label output1Label;
+        private System.Windows.Forms.Label option2Label;
+        private System.Windows.Forms.Label option1Label;
         private System.Windows.Forms.Label titleLabel;
     }
 }

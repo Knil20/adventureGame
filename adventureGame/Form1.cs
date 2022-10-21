@@ -216,28 +216,18 @@ namespace adventureGame
                     break;
                 case 13:
                     titleLabel.Text = "You refuse to put on the suit, you decide to head back to the office";
-                    option1Label.Text = "Don't Not Not Not Not Press The Button";
-                    option2Label.Text = "Don't Not Not Not Not Press The Button";
-                    Refresh();
-                    Thread.Sleep(500);
-                    if (page == 13)
-                    {
-                        page = 4;
-
-                    }
-                    else
-                    {
-                        page = 4;
-                    }
+                    option1Label.Text = "Go Back";
+                    option2Label.Text = "Go Back";
+                    
 
                     break;
                 case 14:
                     titleLabel.Text = "The animatronic wanders into your room but sees no sign of life, and wanders back out";
                     Refresh();
-                    Thread.Sleep(1000);
+                    Thread.Sleep(4000);
                     titleLabel.Text = "with opening time right around the corner, you have no choice but to stay in the office";
                     Refresh();
-                    Thread.Sleep(1000);
+                    Thread.Sleep(4000);
                     titleLabel.Text = "You discover a camera system that you can use to monitor the animatronics,";
                     option1Label.Text = "Main Hall";
                     option2Label.Text = "Kitchen";
@@ -253,20 +243,9 @@ namespace adventureGame
                     option2Label.Text = "Prepare For Animatronic";
                     break;
                 case 17:
-                    titleLabel.Text = "You get off the cameras";
-                    option1Label.Text = "Don't Not Not Not Not Press The Button";
-                    option2Label.Text = "Don't Not Not Not Not Press The Button";
-                    Refresh();
-                    Thread.Sleep(200);
-                    if (page == 17)
-                    {
-                        page = 16;
-
-                    }
-                    else
-                    {
-                        page = 16;
-                    }
+                    titleLabel.Text = "You get off the cameras, No ones Here";
+                    option1Label.Text = "Go Back On Cameras";
+                    option2Label.Text = "Prepare for something thats not here";
                     break;
                 case 18:
                     titleLabel.Text = "While you are dazzled by the flashy cameras, an animatronic snuck into the office and forced you off the camera and into their mouth, Yikes!";
@@ -294,15 +273,8 @@ namespace adventureGame
                     option2Label.Text = "Don't Not Not Not Not Press The Button";
                     Refresh();
                     Thread.Sleep(200);
-                    if (page == 22)
-                    {
-                        page = 20;
 
-                    }
-                    else
-                    {
-                        page = 20;
-                    }
+
                     break;
                 case 23:
                     titleLabel.Text = "An animatronic is slowly making its way to the office";
@@ -539,57 +511,43 @@ namespace adventureGame
                     break;
                 case 13:
                     titleLabel.Text = "You refuse to put on the suit, you decide to head back to the office";
-                    option1Label.Text = "Don't Not Not Not Not Press The Button";
-                    option2Label.Text = "Don't Not Not Not Not Press The Button";
-                    Refresh();
-                    Thread.Sleep(500);
-                    if (page == 13)
-                    {
-                        page = 4;
+                    option1Label.Text = "Go Back";
+                    option2Label.Text = "Go Back";
 
-                    }
-                    else
-                    {
-                        page = 4;
-                    }
 
                     break;
                 case 14:
                     titleLabel.Text = "The animatronic wanders into your room but sees no sign of life, and wanders back out";
+                    option1Label.Text = "Don't Not Not Not Not Press The Button";
+                    option2Label.Text = "Don't Not Not Not Not Press The Button";
                     Refresh();
-                    Thread.Sleep(1000);
-                    titleLabel.Text = "with opening time right around the corner, you have no choice but to stay in the office";
+                    Thread.Sleep(4000);
+                    titleLabel.Text = "With opening time right around the corner, you have no choice but to stay in the office";
+                    option1Label.Text = "Don't Not Not Not Not Press The Button";
+                    option2Label.Text = "Don't Not Not Not Not Press The Button";
                     Refresh();
-                    Thread.Sleep(1000);
-                    titleLabel.Text = "You discover a camera system that you can use to monitor the animatronics,";
+                    Thread.Sleep(4000);
+                    titleLabel.Text = "You discover a camera system that you can use to monitor the animatronics.";
                     option1Label.Text = "Main Hall";
                     option2Label.Text = "Kitchen";
                     break;
                 case 15:
-                    break;
                     titleLabel.Text = "You find that one of the animatronics is in the kitchen eating trash, despite not having a proper digestive system ";
-                    option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option1Label.Text = "Get Off Camera";
+                    option2Label.Text = "Next Camera";
+                    break;
+                    
                 case 16:
                     titleLabel.Text = "Two of the animatronics are just walking around the room but one f them looks like its heading towards the office";
                     option1Label.Text = "Keep Searching Cameras";
                     option2Label.Text = "Prepare For Animatronic";
                     break;
                 case 17:
-                    titleLabel.Text = "You get off the cameras";
-                    option1Label.Text = "Don't Not Not Not Not Press The Button";
-                    option2Label.Text = "Don't Not Not Not Not Press The Button";
-                    Refresh();
-                    Thread.Sleep(200);
-                    if (page == 17)
-                    {
-                        page = 16;
+                    titleLabel.Text = "You get off the cameras, No ones Here";
+                    option1Label.Text = "Go Back On Cameras";
+                    option2Label.Text = "Prepare for something thats not here";
+                  
 
-                    }
-                    else
-                    {
-                        page = 16;
-                    }
                     break;
                 case 18:
                     titleLabel.Text = "While you are dazzled by the flashy cameras, an animatronic snuck into the office and forced you off the camera and into their mouth, Yikes!";
@@ -613,19 +571,9 @@ namespace adventureGame
                     break;
                 case 22:
                     titleLabel.Text = "Nothings There";
-                    option1Label.Text = "Don't Not Not Not Not Press The Button";
-                    option2Label.Text = "Don't Not Not Not Not Press The Button";
-                    Refresh();
-                    Thread.Sleep(200);
-                    if (page == 22)
-                    {
-                        page = 20;
-
-                    }
-                    else
-                    {
-                        page = 20;
-                    }
+                    option1Label.Text = "Go Back";
+                    option2Label.Text = "Go Back";
+                    
                     break;
                 case 23:
                     titleLabel.Text = "An animatronic is slowly making its way to the office";

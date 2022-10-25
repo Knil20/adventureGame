@@ -69,5 +69,44 @@ namespace adventureGame.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ebn0Kq1UMAAmU1m__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Ebn0Kq1UMAAmU1m (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FREDDY {
+            get {
+                object obj = ResourceManager.GetObject("FREDDY", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FREDDY_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("FREDDY-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream freddyHonk {
+            get {
+                return ResourceManager.GetStream("freddyHonk", resourceCulture);
+            }
+        }
     }
 }

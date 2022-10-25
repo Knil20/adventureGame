@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace adventureGame
 {
@@ -173,6 +174,7 @@ namespace adventureGame
                     option2Label.Text = "Hide";
                     leaveButton.Text = "Leave?";
                     leaveButton.Visible = true;
+                    
                     break;
                 case 2:
                     titleLabel.Text = "You find a security office";
@@ -180,6 +182,7 @@ namespace adventureGame
                     option2Label.Text = "Keep Looking";
                     leaveButton.Text = "";
                     leaveButton.Visible = false;
+
                     break;
                 case 3:
                     titleLabel.Text = "You hide under a table";
@@ -650,6 +653,17 @@ namespace adventureGame
         private void leaveButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void honkButton_Click(object sender, EventArgs e)
+        {
+            SoundPlayer freddyHonk = new SoundPlayer(Properties.Resources.freddyHonk);
+            freddyHonk.Play();
         }
     }
 }

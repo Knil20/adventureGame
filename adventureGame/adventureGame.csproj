@@ -83,5 +83,20 @@
   <ItemGroup>
     <None Include="Resources\Ebn0Kq1UMAAmU1m.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ebn0Kq1UMAAmU1m %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FREDDY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FREDDY-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\345054__azumarill__epson-receipt-printer5 %281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fnaf-12-3-freddys-nose-sound-_1_.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -34,6 +34,7 @@
             this.option1Label = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
             this.leaveButton = new System.Windows.Forms.Button();
+            this.honkButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // option1Button
@@ -66,6 +67,7 @@
             // 
             // option2Label
             // 
+            this.option2Label.BackColor = System.Drawing.Color.Transparent;
             this.option2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option2Label.ForeColor = System.Drawing.Color.White;
             this.option2Label.Location = new System.Drawing.Point(117, 407);
@@ -76,6 +78,7 @@
             // 
             // option1Label
             // 
+            this.option1Label.BackColor = System.Drawing.Color.Transparent;
             this.option1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option1Label.ForeColor = System.Drawing.Color.White;
             this.option1Label.Location = new System.Drawing.Point(117, 370);
@@ -86,6 +89,7 @@
             // 
             // titleLabel
             // 
+            this.titleLabel.BackColor = System.Drawing.Color.Transparent;
             this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.White;
             this.titleLabel.Location = new System.Drawing.Point(12, 9);
@@ -105,22 +109,41 @@
             this.leaveButton.UseVisualStyleBackColor = true;
             this.leaveButton.Click += new System.EventHandler(this.leaveButton_Click);
             // 
+            // honkButton
+            // 
+            this.honkButton.BackColor = System.Drawing.Color.Black;
+            this.honkButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.honkButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.honkButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.honkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.honkButton.ForeColor = System.Drawing.Color.Black;
+            this.honkButton.Location = new System.Drawing.Point(233, 190);
+            this.honkButton.Name = "honkButton";
+            this.honkButton.Size = new System.Drawing.Size(35, 21);
+            this.honkButton.TabIndex = 6;
+            this.honkButton.UseVisualStyleBackColor = false;
+            this.honkButton.Click += new System.EventHandler(this.honkButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::adventureGame.Properties.Resources.Ebn0Kq1UMAAmU1m;
+            this.BackgroundImage = global::adventureGame.Properties.Resources.FREDDY_removebg_preview;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(452, 450);
+            this.Controls.Add(this.honkButton);
             this.Controls.Add(this.leaveButton);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.option2Label);
             this.Controls.Add(this.option1Label);
             this.Controls.Add(this.option2Button);
             this.Controls.Add(this.option1Button);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "adventureGame";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
@@ -133,6 +156,7 @@
         private System.Windows.Forms.Label option1Label;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Button leaveButton;
+        private System.Windows.Forms.Button honkButton;
     }
 }
 

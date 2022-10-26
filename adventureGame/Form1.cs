@@ -15,13 +15,16 @@ namespace adventureGame
     public partial class Form1 : Form
     {
         int page = 1;
-
+        SoundPlayer freddyScream = new SoundPlayer(Properties.Resources.freddyScream);
+        SoundPlayer winSong = new SoundPlayer(Properties.Resources.winSong);
+        SoundPlayer suitScream = new SoundPlayer(Properties.Resources.suitScream);
         public Form1()
         {
             InitializeComponent();
             titleLabel.Text = "You are stuck in a pizzeria with killer animatronics. Do you Hide or do you Look Around";
             option1Label.Text = "Look around";
             option2Label.Text = "Hide";
+            
 
         }
 
@@ -174,7 +177,8 @@ namespace adventureGame
                     option2Label.Text = "Hide";
                     leaveButton.Text = "Leave?";
                     leaveButton.Visible = true;
-                    
+                    honkButton.Visible = true;
+
                     break;
                 case 2:
                     titleLabel.Text = "You find a security office";
@@ -210,26 +214,39 @@ namespace adventureGame
                     titleLabel.Text = "Why would you do that,You were found and now you're dead";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    honkButton.Visible = false;
+                    this.BackgroundImage = Properties.Resources.jumpscareDeath;
+                    freddyScream.Play();
                     break;
                 case 8:
                     titleLabel.Text = "You got caught by an animatronic";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    honkButton.Visible = false;
+                    this.BackgroundImage = Properties.Resources.jumpscareDeath;
+
+                    freddyScream.Play();
                     break;
                 case 9:
                     titleLabel.Text = "An animatronic saw, chased, and killed you.";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    honkButton.Visible = false;
+                    this.BackgroundImage = Properties.Resources.jumpscareDeath;
+
+                    freddyScream.Play();
                     break;
                 case 10:
                     titleLabel.Text = "You run out of the office and bump into a door that was accidentally left unlocked, you escape";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+
                     break;
                 case 11:
                     titleLabel.Text = "You stay put and survive the night until the place opens again, congrats, for being lazy. play again";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    winSong.Play();
                     break;
                 case 12:
                     titleLabel.Text = "You come across an old room full of old animatronic costumes ";
@@ -261,6 +278,8 @@ namespace adventureGame
                     titleLabel.Text = "You find that one of the animatronics is in the kitchen eating trash, despite not having a proper digestive system ";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Dam, I Hate This Game";
+
+
                 case 16:
                     titleLabel.Text = "Two of the animatronics are just walking around the room but one of them looks like its heading towards the office";
                     option1Label.Text = "Keep Searching Cameras";
@@ -290,12 +309,16 @@ namespace adventureGame
                     titleLabel.Text = "You put the suit on unaware the the suit has a mechanism that fills the suit with metal to create an animatronic, you trip set mechanism and the suit crushes you. you are dead, play again";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    honkButton.Visible = false;
+                    this.BackgroundImage = Properties.Resources.suitDeath;
+                    suitScream.Play();
+
                     break;
                 case 22:
                     titleLabel.Text = "Nothings There";
                     option1Label.Text = "Press To Go Back";
                     option2Label.Text = "Press To Go Back";
-                    
+
 
 
                     break;
@@ -317,6 +340,7 @@ namespace adventureGame
                     option2Label.Text = "Dam, I Hate This Game";
                     option1Label.Visible = true;
                     option2Label.Visible = true;
+                    winSong.Play();
                     break;
                 case 25:
                     titleLabel.Text = "You go back on the cameras";
@@ -327,16 +351,27 @@ namespace adventureGame
                     titleLabel.Text = "Doesn't matter, an animatronic that you may or may not have known about has entered and killed you";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    honkButton.Visible = false;
+                    this.BackgroundImage = Properties.Resources.jumpscareDeath;
+
+                    freddyScream.Play();
                     break;
                 case 27:
                     titleLabel.Text = "Animatronic enters and you try and flash it, but the flashlight has died, and now, you have died too";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    honkButton.Visible = false;
+                    this.BackgroundImage = Properties.Resources.jumpscareDeath;
+                    freddyScream.Play();
                     break;
                 case 28:
                     titleLabel.Text = "Animatronic regains its scanner and finds and kills you";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    honkButton.Visible = false;
+                    this.BackgroundImage = Properties.Resources.jumpscareDeath;
+
+                    freddyScream.Play();
                     break;
 
 
@@ -482,6 +517,8 @@ namespace adventureGame
                     option2Label.Text = "Hide";
                     leaveButton.Text = "Leave?";
                     leaveButton.Visible = true;
+                    honkButton.Visible = true;
+
                     break;
                 case 2:
                     titleLabel.Text = "You find a security office";
@@ -489,6 +526,7 @@ namespace adventureGame
                     option2Label.Text = "Keep Looking";
                     leaveButton.Text = "";
                     leaveButton.Visible = false;
+
                     break;
                 case 3:
                     titleLabel.Text = "You hide under a table";
@@ -516,26 +554,39 @@ namespace adventureGame
                     titleLabel.Text = "Why would you do that,You were found and now you're dead";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    honkButton.Visible = false;
+                    this.BackgroundImage = Properties.Resources.jumpscareDeath;
+                    freddyScream.Play();
                     break;
                 case 8:
                     titleLabel.Text = "You got caught by an animatronic";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    honkButton.Visible = false;
+                    this.BackgroundImage = Properties.Resources.jumpscareDeath;
+
+                    freddyScream.Play();
                     break;
                 case 9:
                     titleLabel.Text = "An animatronic saw, chased, and killed you.";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    honkButton.Visible = false;
+                    this.BackgroundImage = Properties.Resources.jumpscareDeath;
+
+                    freddyScream.Play();
                     break;
                 case 10:
                     titleLabel.Text = "You run out of the office and bump into a door that was accidentally left unlocked, you escape";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+
                     break;
                 case 11:
                     titleLabel.Text = "You stay put and survive the night until the place opens again, congrats, for being lazy. play again";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    winSong.Play();
                     break;
                 case 12:
                     titleLabel.Text = "You come across an old room full of old animatronic costumes ";
@@ -567,6 +618,8 @@ namespace adventureGame
                     titleLabel.Text = "You find that one of the animatronics is in the kitchen eating trash, despite not having a proper digestive system ";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Dam, I Hate This Game";
+
+                    
                 case 16:
                     titleLabel.Text = "Two of the animatronics are just walking around the room but one of them looks like its heading towards the office";
                     option1Label.Text = "Keep Searching Cameras";
@@ -596,6 +649,11 @@ namespace adventureGame
                     titleLabel.Text = "You put the suit on unaware the the suit has a mechanism that fills the suit with metal to create an animatronic, you trip set mechanism and the suit crushes you. you are dead, play again";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    honkButton.Visible = false;
+                    this.BackgroundImage = Properties.Resources.suitDeath;
+                    suitScream.Play();
+
+
                     break;
                 case 22:
                     titleLabel.Text = "Nothings There";
@@ -623,6 +681,7 @@ namespace adventureGame
                     option2Label.Text = "Dam, I Hate This Game";
                     option1Label.Visible = true;
                     option2Label.Visible = true;
+                    winSong.Play();
                     break;
                 case 25:
                     titleLabel.Text = "You go back on the cameras";
@@ -633,16 +692,27 @@ namespace adventureGame
                     titleLabel.Text = "Doesn't matter, an animatronic that you may or may not have known about has entered and killed you";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    honkButton.Visible = false;
+                    this.BackgroundImage = Properties.Resources.jumpscareDeath;
+
+                    freddyScream.Play();
                     break;
                 case 27:
                     titleLabel.Text = "Animatronic enters and you try and flash it, but the flashlight has died, and now, you have died too";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    honkButton.Visible = false;
+                    this.BackgroundImage = Properties.Resources.jumpscareDeath;
+                    freddyScream.Play();
                     break;
                 case 28:
                     titleLabel.Text = "Animatronic regains its scanner and finds and kills you";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
+                    honkButton.Visible = false;
+                    this.BackgroundImage = Properties.Resources.jumpscareDeath;
+
+                    freddyScream.Play();
                     break;
             }
 

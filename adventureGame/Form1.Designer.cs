@@ -39,29 +39,36 @@
             // 
             // option1Button
             // 
+            this.option1Button.BackColor = System.Drawing.Color.Transparent;
             this.option1Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.option1Button.FlatAppearance.BorderSize = 0;
             this.option1Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.option1Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.option1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.option1Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.option1Button.Location = new System.Drawing.Point(64, 370);
+            this.option1Button.ForeColor = System.Drawing.Color.White;
+            this.option1Button.Location = new System.Drawing.Point(64, 367);
             this.option1Button.Name = "option1Button";
             this.option1Button.Size = new System.Drawing.Size(38, 31);
             this.option1Button.TabIndex = 0;
-            this.option1Button.Text = "1";
-            this.option1Button.UseVisualStyleBackColor = true;
+            this.option1Button.Text = ">";
+            this.option1Button.UseVisualStyleBackColor = false;
             this.option1Button.Click += new System.EventHandler(this.option1Button_Click);
             // 
             // option2Button
             // 
             this.option2Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.option2Button.FlatAppearance.BorderSize = 0;
             this.option2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.option2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.option2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.option2Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.option2Button.Location = new System.Drawing.Point(64, 407);
+            this.option2Button.ForeColor = System.Drawing.Color.White;
+            this.option2Button.Location = new System.Drawing.Point(64, 404);
             this.option2Button.Name = "option2Button";
             this.option2Button.Size = new System.Drawing.Size(38, 31);
             this.option2Button.TabIndex = 1;
-            this.option2Button.Text = "2";
+            this.option2Button.Text = ">";
             this.option2Button.UseVisualStyleBackColor = true;
             this.option2Button.Click += new System.EventHandler(this.option2Button_Click);
             // 
@@ -101,12 +108,16 @@
             // 
             // leaveButton
             // 
+            this.leaveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.leaveButton.FlatAppearance.BorderSize = 0;
+            this.leaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.leaveButton.ForeColor = System.Drawing.Color.White;
             this.leaveButton.Location = new System.Drawing.Point(389, 64);
             this.leaveButton.Name = "leaveButton";
             this.leaveButton.Size = new System.Drawing.Size(51, 31);
             this.leaveButton.TabIndex = 5;
             this.leaveButton.Text = "Leave?";
-            this.leaveButton.UseVisualStyleBackColor = true;
+            this.leaveButton.UseVisualStyleBackColor = false;
             this.leaveButton.Click += new System.EventHandler(this.leaveButton_Click);
             // 
             // honkButton

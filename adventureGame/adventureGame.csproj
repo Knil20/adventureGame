@@ -87,6 +87,7 @@
     <None Include="Resources\Ebn0Kq1UMAAmU1m %281%29.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\fnaf-jumpscare-sound-_2_ %281%29.7z" />
     <None Include="Resources\FREDDY.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +98,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fnaf-12-3-freddys-nose-sound-_1_.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\five-nights-at-freddys-full-scream-sound_2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chica-fnaf.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddrt6kb-5fa81c03-bfc6-472d-9470-7e98b71f5c1a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jumpscare.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddcdmn5-124a2e75-56a8-4461-8703-163ed15d83be-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\five-nights-at-freddys-6-am.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\William-Afton_s-Death-Scene-_SFM-FNaF_.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

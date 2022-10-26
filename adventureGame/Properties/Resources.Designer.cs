@@ -63,26 +63,6 @@ namespace adventureGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ebn0Kq1UMAAmU1m {
-            get {
-                object obj = ResourceManager.GetObject("Ebn0Kq1UMAAmU1m", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Ebn0Kq1UMAAmU1m__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Ebn0Kq1UMAAmU1m (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap FREDDY {
             get {
                 object obj = ResourceManager.GetObject("FREDDY", resourceCulture);
@@ -106,6 +86,53 @@ namespace adventureGame.Properties {
         internal static System.IO.UnmanagedMemoryStream freddyHonk {
             get {
                 return ResourceManager.GetStream("freddyHonk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream freddyScream {
+            get {
+                return ResourceManager.GetStream("freddyScream", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jumpscareDeath {
+            get {
+                object obj = ResourceManager.GetObject("jumpscareDeath", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap suitDeath {
+            get {
+                object obj = ResourceManager.GetObject("suitDeath", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream suitScream {
+            get {
+                return ResourceManager.GetStream("suitScream", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream winSong {
+            get {
+                return ResourceManager.GetStream("winSong", resourceCulture);
             }
         }
     }

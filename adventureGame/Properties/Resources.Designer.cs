@@ -73,9 +73,9 @@ namespace adventureGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FREDDY_removebg_preview {
+        internal static System.Drawing.Bitmap freddyBackground {
             get {
-                object obj = ResourceManager.GetObject("FREDDY-removebg-preview", resourceCulture);
+                object obj = ResourceManager.GetObject("freddyBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

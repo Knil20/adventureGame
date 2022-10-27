@@ -178,6 +178,7 @@ namespace adventureGame
                     leaveButton.Text = "Leave?";
                     leaveButton.Visible = true;
                     honkButton.Visible = true;
+                    this.BackgroundImage = Properties.Resources.freddyBackground;
 
                     break;
                 case 2:
@@ -518,6 +519,7 @@ namespace adventureGame
                     leaveButton.Text = "Leave?";
                     leaveButton.Visible = true;
                     honkButton.Visible = true;
+                    this.BackgroundImage = Properties.Resources.freddyBackground;
 
                     break;
                 case 2:

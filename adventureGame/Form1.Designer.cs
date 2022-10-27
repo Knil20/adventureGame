@@ -141,7 +141,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::adventureGame.Properties.Resources.FREDDY_removebg_preview;
+            this.BackgroundImage = global::adventureGame.Properties.Resources.freddyBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(452, 450);
             this.Controls.Add(this.honkButton);

@@ -740,6 +740,14 @@ namespace adventureGame
 
         private void leaveButton_Click(object sender, EventArgs e)
         {
+            option1Label.Visible = false;
+            option2Label.Visible = false;
+            option1Button.Visible = false;
+            option2Button.Visible = false;
+
+            titleLabel.Text = " Thank You For Playing";
+            Refresh();
+            Thread.Sleep(2000);
             Application.Exit();
         }
 

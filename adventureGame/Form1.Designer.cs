@@ -42,8 +42,8 @@
             this.option1Button.BackColor = System.Drawing.Color.Transparent;
             this.option1Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.option1Button.FlatAppearance.BorderSize = 0;
-            this.option1Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.option1Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.option1Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.option1Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.option1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.option1Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option1Button.ForeColor = System.Drawing.Color.White;
@@ -59,8 +59,8 @@
             // 
             this.option2Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.option2Button.FlatAppearance.BorderSize = 0;
-            this.option2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.option2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.option2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.option2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.option2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.option2Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option2Button.ForeColor = System.Drawing.Color.White;
@@ -152,7 +152,9 @@
             this.Controls.Add(this.option2Button);
             this.Controls.Add(this.option1Button);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "adventureGame";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

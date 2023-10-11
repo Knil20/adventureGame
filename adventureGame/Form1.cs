@@ -238,7 +238,7 @@ namespace adventureGame
                     freddyScream.Play();
                     break;
                 case 10:
-                    titleLabel.Text = "You run out of the office and bump into a door that was accidentally left unlocked, you escape";
+                    titleLabel.Text = "You run out of the office and bump into a door that was accidentally left unlocked, you escape, You win.";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
 
@@ -265,11 +265,15 @@ namespace adventureGame
                     titleLabel.Text = "The animatronic wanders into your room but sees no sign of life, and wanders back out";
                     option1Label.Text = "";
                     option2Label.Text = "";
+                    option1Button.Visible = false;
+                    option2Button.Visible = false;
                     Refresh();
                     Thread.Sleep(4000);
                     titleLabel.Text = "With opening time right around the corner, you have no choice but to stay in the office";
                     Refresh();
                     Thread.Sleep(4000);
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     titleLabel.Text = "You discover a camera system that you can use to monitor the animatronics,";
                     option1Label.Text = "Main Hall";
                     option2Label.Text = "Kitchen";
@@ -278,7 +282,7 @@ namespace adventureGame
                     break;
                     titleLabel.Text = "You find that one of the animatronics is in the kitchen eating trash, despite not having a proper digestive system ";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
 
 
                 case 16:
@@ -312,7 +316,7 @@ namespace adventureGame
                     option2Label.Text = "Damn, I Hate This Game";
                     honkButton.Visible = false;
                     this.BackgroundImage = Properties.Resources.suitDeath;
-                    suitScream.Play();
+                    //suitScream.Play();
 
                     break;
                 case 22:
@@ -334,13 +338,17 @@ namespace adventureGame
                     option2Label.Text = "";
                     option1Label.Visible = false;
                     option2Label.Visible = false;
+                    option1Button.Visible = false;
+                    option2Button.Visible = false;
                     Refresh();
                     Thread.Sleep(5000);
                     titleLabel.Text = "Its opening time, you win";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     option1Label.Visible = true;
                     option2Label.Visible = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     winSong.Play();
                     break;
                 case 25:
@@ -579,7 +587,7 @@ namespace adventureGame
                     freddyScream.Play();
                     break;
                 case 10:
-                    titleLabel.Text = "You run out of the office and bump into a door that was accidentally left unlocked, you escape";
+                    titleLabel.Text = "You run out of the office and bump into a door that was accidentally left unlocked, you escape, You win.";
                     option1Label.Text = "Play Again";
                     option2Label.Text = "Damn, I Hate This Game";
 
@@ -606,11 +614,15 @@ namespace adventureGame
                     titleLabel.Text = "The animatronic wanders into your room but sees no sign of life, and wanders back out";
                     option1Label.Text = "";
                     option2Label.Text = "";
+                    option1Button.Visible = false;
+                    option2Button.Visible = false;
                     Refresh();
                     Thread.Sleep(4000);
                     titleLabel.Text = "With opening time right around the corner, you have no choice but to stay in the office";
                     Refresh();
                     Thread.Sleep(4000);
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     titleLabel.Text = "You discover a camera system that you can use to monitor the animatronics,";
                     option1Label.Text = "Main Hall";
                     option2Label.Text = "Kitchen";
@@ -619,7 +631,7 @@ namespace adventureGame
                     break;
                     titleLabel.Text = "You find that one of the animatronics is in the kitchen eating trash, despite not having a proper digestive system ";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
 
                     
                 case 16:
@@ -653,7 +665,7 @@ namespace adventureGame
                     option2Label.Text = "Damn, I Hate This Game";
                     honkButton.Visible = false;
                     this.BackgroundImage = Properties.Resources.suitDeath;
-                    suitScream.Play();
+                    //suitScream.Play();
 
 
                     break;
@@ -676,13 +688,17 @@ namespace adventureGame
                     option2Label.Text = "";
                     option1Label.Visible = false;
                     option2Label.Visible = false;
+                    option1Button.Visible = false;
+                    option2Button.Visible = false;
                     Refresh();
                     Thread.Sleep(5000);
                     titleLabel.Text = "Its opening time, you win";
                     option1Label.Text = "Play Again";
-                    option2Label.Text = "Dam, I Hate This Game";
+                    option2Label.Text = "Damn, I Hate This Game";
                     option1Label.Visible = true;
                     option2Label.Visible = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     winSong.Play();
                     break;
                 case 25:

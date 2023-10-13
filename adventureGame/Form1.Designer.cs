@@ -128,7 +128,7 @@
             this.honkButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.honkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.honkButton.ForeColor = System.Drawing.Color.Black;
-            this.honkButton.Location = new System.Drawing.Point(233, 190);
+            this.honkButton.Location = new System.Drawing.Point(234, 191);
             this.honkButton.Name = "honkButton";
             this.honkButton.Size = new System.Drawing.Size(35, 21);
             this.honkButton.TabIndex = 6;

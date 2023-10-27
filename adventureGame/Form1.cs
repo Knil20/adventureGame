@@ -316,7 +316,7 @@ namespace adventureGame
                     option2Label.Text = "Damn, I Hate This Game";
                     honkButton.Visible = false;
                     this.BackgroundImage = Properties.Resources.suitDeath;
-                    //suitScream.Play();
+                    
 
                     break;
                 case 22:
@@ -665,7 +665,7 @@ namespace adventureGame
                     option2Label.Text = "Damn, I Hate This Game";
                     honkButton.Visible = false;
                     this.BackgroundImage = Properties.Resources.suitDeath;
-                    //suitScream.Play();
+                    
 
 
                     break;
